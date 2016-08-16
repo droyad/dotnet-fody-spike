@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <id>$id$</id>
+    <version>$version$</version>
+    <title></title>
+    <authors>Octopus</authors>
+    <description>TODO</description>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+  </metadata>
+  <files>
+    <file src="bin\Debug\*.dll" target="lib/net461"></file>
+  </files>
+</package>

@@ -7,13 +7,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{31EC60B8-A7B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{BB381311-8E8A-4201-926A-7EF83EBC0DA9}"
 	ProjectSection(SolutionItems) = preProject
-		global.json = global.json
 		RunTestApp.cmd = RunTestApp.cmd
 	EndProjectSection
 EndProject
-Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "dotnet-fody", "src\dotnet-fody\dotnet-fody.xproj", "{74A4C90F-FBBD-43CB-B347-1352B057893A}"
-EndProject
 Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "TestApp", "src\TestApp\TestApp.xproj", "{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "dotnet-fody", "src\dotnet-fody\dotnet-fody.csproj", "{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,20 +20,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{74A4C90F-FBBD-43CB-B347-1352B057893A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{74A4C90F-FBBD-43CB-B347-1352B057893A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{74A4C90F-FBBD-43CB-B347-1352B057893A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{74A4C90F-FBBD-43CB-B347-1352B057893A}.Release|Any CPU.Build.0 = Release|Any CPU
 		{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{74A4C90F-FBBD-43CB-B347-1352B057893A} = {31EC60B8-A7B6-4CA3-9D4D-2CF6B93B7E90}
 		{5F4D9A29-7F6A-4DC7-A48F-7C4C44C93ABB} = {31EC60B8-A7B6-4CA3-9D4D-2CF6B93B7E90}
+		{58CE4D1F-F6DB-484B-9E77-90F7132EBF0C} = {31EC60B8-A7B6-4CA3-9D4D-2CF6B93B7E90}
 	EndGlobalSection
 EndGlobal

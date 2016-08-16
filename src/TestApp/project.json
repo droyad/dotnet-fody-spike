@@ -3,7 +3,6 @@
   "buildOptions": {
     "emitEntryPoint": true
   },
-
   "dependencies": {
     "Microsoft.NETCore.App": {
       "type": "platform",
@@ -15,7 +14,7 @@
   "tools": {
     "dotnet-fody": {
       "version": "0.0.0.0",
-      "imports": "net451" 
+      "imports": "net461" 
     }
   },
   "frameworks": {
