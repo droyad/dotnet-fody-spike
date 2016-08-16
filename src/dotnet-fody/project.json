@@ -1,0 +1,22 @@
+﻿{
+  "version": "0.0.0-*",
+  "buildOptions": {
+    "emitEntryPoint": true
+  },
+
+  "dependencies": {
+   /* "Microsoft.NETCore.App": {
+      "type": "platform",
+      "version": "1.0.0"
+    }*/
+  },
+
+  "frameworks": {
+    "net451": {
+      //"imports": "dnxcore50"
+    }
+  },
+  "runtimes": {
+    "win7-x64": {}
+  }
+}
