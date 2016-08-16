@@ -10,17 +10,24 @@ namespace TestApp
     {
         public static void Main(string[] args)
         {
-            
             var isVirtual = typeof(Program).GetMethod(nameof(TestMethod)).IsVirtual;
-            if (isVirtual)
+            PrintOutcome(isVirtual, "Virtuosity");
+
+            var memberDoesNotExist = typeof(Program).GetMethod(nameof(RemovedMember)) == null;
+            PrintOutcome(memberDoesNotExist, "Obsolete");
+        }
+
+        private static void PrintOutcome(bool success, string test)
+        {
+            if (success)
             {
                 Console.ForegroundColor = ConsoleColor.Green;
-                Console.WriteLine("It Works!!!!");
+                Console.WriteLine($"{test}: It Works!!!!");
             }
             else
             {
                 Console.ForegroundColor = ConsoleColor.Red;
-                Console.WriteLine("It didn't work :(");
+                Console.WriteLine($"{test}: It didn't work :(");
             }
             Console.ResetColor();
         }
@@ -28,6 +35,12 @@ namespace TestApp
         public void TestMethod()
         {
 
+        }
+
+        [ObsoleteEx(RemoveInVersion = "0.0.0.0")]
+        public void RemovedMember()
+        {
+            
         }
     }
 }

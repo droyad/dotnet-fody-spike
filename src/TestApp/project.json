@@ -8,18 +8,20 @@
       "type": "platform",
       "version": "1.0.0"
     },
-    "Fody": "1.29.4",
-    "Virtuosity.Fody": "1.19.11"
+    "Microsoft.NETCore.Portable.Compatibility": "1.0.1",
+    "Obsolete.Fody": "4.1.0"
   },
   "tools": {
     "dotnet-fody": {
       "version": "0.0.0.0",
-      "imports": "net461" 
-    }
+      "imports": "net461"
+    },
+    "Fody": "1.29.4",
+    "Virtuosity.Fody": "1.19.11"
   },
   "frameworks": {
     "netcoreapp1.0": {
-      "imports": "dnxcore50"
+      "imports": [ "dnxcore50" ]
     }
   },
   "scripts": {
